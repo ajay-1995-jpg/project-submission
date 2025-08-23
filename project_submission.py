@@ -140,21 +140,3 @@ if processed_text:
                 mime="audio/mp3"
             )
 
-import nbformat
-
-# Path of the current notebook (Colab provides it only when saving locally)
-notebook_path = "/content/.ipynb"
-output_path = "/content/your_notebook_clean.py"
-
-# Load the notebook
-with open(notebook_path, "r", encoding="utf-8") as f:
-    nb = nbformat.read(f, as_version=4)
-
-# Extract only code cells
-code_cells = [cell["source"] for cell in nb["cells"] if cell["cell_type"] == "code"]
-
-# Save to .py
-with open(output_path, "w", encoding="utf-8") as f:
-    f.write("\n\n".join(code_cells))
-
-print(f"Saved to {output_path}")
