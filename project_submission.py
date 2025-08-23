@@ -32,7 +32,7 @@ Install the required libraries using `pip`.
 Install the required libraries using pip from the requirements.txt file.
 """
 
-!pip install -r requirements.txt
+
 
 """## Streamlit application structure
 
