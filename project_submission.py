@@ -191,7 +191,7 @@ translation_prompt = PromptTemplate(
     template=translation_template,
 )
 
-llm = GoogleGenerativeAI(model="gemini-pro", temperature=0.3)
+llm = GoogleGenerativeAI(model="gemini-1.5-flash", temperature=0.0)
 
 translation_chain = LLMChain(llm=llm, prompt=translation_prompt)
 
