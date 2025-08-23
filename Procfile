@@ -1,1 +1,1 @@
-web: streamlit run project_submission.py
+web: streamlit run --server.port $PORT --server.enableCORS false project_submission.py
