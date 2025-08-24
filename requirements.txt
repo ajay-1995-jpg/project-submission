@@ -6,3 +6,4 @@ PyPDF2
 chromadb
 gtts
 langchain-google-genai
+xlrd>=2.0.1
