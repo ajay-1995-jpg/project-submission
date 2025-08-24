@@ -15,7 +15,7 @@ uploaded_file = None
 input_text = ""
 
 if input_method == "Upload a file":
-    uploaded_file = st.file_uploader("Upload a file", type=['pdf', 'txt', 'xlsx', 'xls', 'csv'])
+    uploaded_file = st.file_uploader("Upload a file", type=['pdf', 'txt', 'xls', 'csv'])
 elif input_method == "Enter text directly":
     input_text = st.text_area("Enter text here:")
 
